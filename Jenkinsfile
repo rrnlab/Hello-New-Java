@@ -22,5 +22,11 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage('Maven Execute'){
+
+            steps{
+                sh 'mvn exec:java'
+            }
+        }
     }
 }
